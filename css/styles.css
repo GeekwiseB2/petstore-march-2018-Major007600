@@ -5,6 +5,12 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 /**header**/
+.flex {
+  display:flex;
+  height: 100%;
+  justify-content:space-between;
+  align-items: center;
+}
 .brand{
   font-family: 'satisfy',cursive;
   color: #fd837e;  //base orange
@@ -35,4 +41,34 @@ body{
   color: #fff;
   font-size: 2em;
   margin-top: 36px;
+}
+.thumbnail{
+  padding: 6px;
+  background-color: #edf1fa;
+  border: none;
+}
+footer{
+  padding-top: 45px;
+}
+
+
+footer,footer a, footer a:hover {
+  background-color: #231f20;
+  color: #b9babb;
+  text-decoration: none;
+}
+footer.logo{
+  position: relative;
+  left: -55;
+}
+.middle{
+  border-left: 1px solid #313030;
+  border-right: 1px solid #313030;
+}
+/*Media Queries*/
+@media screen and(max-width: 992px){
+  footer .logo{
+  position: static;
+}
+
 }
